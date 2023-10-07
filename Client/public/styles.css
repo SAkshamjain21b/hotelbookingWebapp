@@ -1,0 +1,302 @@
+.AskCard {
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-container5 {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.flex-container6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.flex-container7 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.flex-container8 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container8 h4 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.flex-container9 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-container9>div {
+    /* margin: 0px 0px 0px 10px; */
+}
+
+.roomType {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.vg {
+    padding-top: 10px;
+}
+
+.flex-container7>div {
+    padding-left: 20px;
+    ;
+}
+
+
+.flex-container>div {
+    margin: 20px;
+}
+
+
+#feature2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#rating {
+    margin-left: 400px;
+}
+
+#rate {
+    margin-bottom: 0px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'askCard askCard popDest popDest popDest popDest'
+        'hotelCard hotelCard hotelCard hotelCard hotelCard hotelCard';
+    gap: 10px;
+    padding: 10px;
+}
+
+.item2 {
+    grid-area: askCard;
+}
+
+.item3 {
+    grid-area: popDest;
+}
+
+.item4 {
+    grid-area: hotelCard;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-areas: 'imgCard imgCard imgCard imgCard imgCard';
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container2 {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+        'bestroom bestroom'
+        'location review'
+    ;
+}
+
+.item21 {
+    grid-area: bestroom;
+}
+
+.item22 {
+    grid-area: location;
+}
+
+.item23 {
+    grid-area: review;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.grid-container1>div {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.grid-container3 {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+        'main main main main main main'
+        'fea fea fea fea fea fea'
+        'typ typ typ typ typ typ'
+        'rate rate rate rate rate rate'
+        'rev rev rev rev rev rev'
+    ;
+}
+
+.item31 {
+    grid-area: main;
+}
+
+.item32 {
+    grid-area: fea;
+}
+
+.item33 {
+    grid-area: typ;
+}
+
+.item34 {
+    grid-area: rate;
+}
+
+.item35 {
+    grid-area: rev;
+    margin: 0px 200px;
+    padding: 10px 0;
+}
+
+.grid-container4 {
+    display: grid;
+    padding: 10px;
+    grid-template-areas:
+        'type type option option price price'
+        'type1 type1 option1 option1 price1 price1'
+        'type1 type1 option2 option2 price2 price2'
+        'type1 type1 option3 option3 price3 price3'
+    ;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.item41 {
+    grid-area: type;
+    text-align: center;
+}
+
+.item42 {
+    grid-area: option;
+    text-align: center;
+}
+
+.item43 {
+    grid-area: price;
+    text-align: center;
+}
+
+.item44 {
+    grid-area: type1;
+}
+
+.item45 {
+    grid-area: option1;
+}
+
+.item46 {
+    grid-area: option2;
+}
+
+.item47 {
+    grid-area: option3;
+}
+
+.item48 {
+    grid-area: price1;
+}
+
+.item49 {
+    grid-area: price2;
+}
+
+.item410 {
+    grid-area: price3;
+}
+
+.popuDest {
+
+    padding: 40px 10px;
+    text-align: justify;
+    color: aliceblue;
+}
+
+.google {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    border-color: #D8D9DA;
+    line-height: 0.1em;
+    color: #D8D9DA;
+    margin-bottom: 30px;
+}
+
+.google span {
+    background: #fff;
+}
+
+hr {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #333 inset;
+    /* flexDirection: column; */
+    }
+
+.paperAuth {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+avatarAuth {
+    margin: 100px;
+    background-color: #D8D9DA;
+}
+
+formAuth {
+    width: 100%;
+    margin-top: 10px;
+}
+
+submitAuth {
+    margin: 3px 0px 2px;
+}
