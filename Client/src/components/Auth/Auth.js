@@ -29,7 +29,7 @@ function Auth() {
         // handleShowPassword(false);
     }
 
-    const initialState = { Name: "", email: "", password: "", confirmPassword: "" ,key:""}
+    const initialState ={ name: "", email: "", password: "", confirmPassword: "" ,key:""}
 
     const [isSignup, setSignup] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
@@ -47,7 +47,7 @@ function Auth() {
                 </Typography>
                 <form className='formAuth' onSubmit={handleSubmit} >
                     <Grid container spacing={2}>
-                        {isSignup && (<Input name='Name' lable="Name" handleChange={handleChange} autoFocus half />)}
+                        {isSignup && (<Input name='name' lable="name" handleChange={handleChange} autoFocus half />)}
                         <Input name='email' lable="Email-Address" handleChange={handleChange} type="email" />
                         <Input name='password' lable="password" handleChange={handleChange} type={showPassword ? "text" : "password"} handleShowPassword={handleShowPassword} />
                         {isSignup && <Input name='confirmPassword' lable="Confirm Password" handleChange={handleChange} type="password" />}

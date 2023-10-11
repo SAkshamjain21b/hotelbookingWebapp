@@ -5,6 +5,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import hotelRoutes from './src/Routes/hotel.js';
 import userRoutes from './src/Routes/user.js';
+import tableRoutes from './src/Routes/table.js';
 
  
 
@@ -17,6 +18,7 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 app.use(cors());
 app.use('/hotels', hotelRoutes);
 app.use('/auth', userRoutes);
+app.use('/table',tableRoutes);
 // app.use(session)
 
 const url = "mongodb+srv://saksham2003jain:saksham.jain21b@cluster0.dwhxtlv.mongodb.net/";

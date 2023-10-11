@@ -21,7 +21,8 @@ function AddRoomType(props) {
             {/* <input type="file" onChange={props.func6} /> */}
             <button onClick={props.func7}>Upload Room Images</button>
             <TextField   onChange={props.func1} id="roomName"  name="roomType" label="Room Name" variant="standard" />
-            <TextField  onChange={props.func1} id="roomArea" name="roomType" label="Room Area" variant="standard" />
+            <TextField onChange={props.func1} id="roomArea" name="roomType" label="Room Area" variant="standard" />
+            <TextField onChange={props.func1} id="numberOfRoom" name="roomType" label="Number of rooms" variant="standard" />
             <TextField  onChange={props.func1} id="roomView" name="roomType" label="Room View" variant="standard" />
             <TextField  onChange={props.func1} id="bedType" name="roomType" label="Type of Bed" variant="standard" />
 

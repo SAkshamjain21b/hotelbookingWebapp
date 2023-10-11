@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import { hotelSchema } from '../models/hotel.js';
 import express from "express";
-import multer from "multer";
+// import multer from "multer";
 
 // const upload = multer({ dest: 'uploads/' });
 const router = express.Router();

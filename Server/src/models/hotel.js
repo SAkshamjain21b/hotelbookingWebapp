@@ -10,6 +10,7 @@ export const hotelSchema = new Schema({
     discription: String,
     price: String,
     tax: String,
+    location:String,
     images: [String],
     userReviews: [{
         reviewTitle: String,
@@ -23,6 +24,7 @@ export const hotelSchema = new Schema({
         roomImages: [String],
         roomName: String,
         roomArea: Number,
+        numberOfRoom:Number,
         roomView: String,
         bedType: String,
         facility: [{

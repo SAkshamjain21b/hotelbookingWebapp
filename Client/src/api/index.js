@@ -7,7 +7,7 @@ export const postHotel = (data) => API.post('/hotels/owner/addHotel', data, cons
 
 
 export const auth = (formData) => API.post('/auth', formData,console.log("Sending auth data"));
-
+export const table = (formData) => API.post('/table', formData, console.log("Sending data to booking table"));
 
 export const postUser = (data) => API.post('/hotels',data,console.log("in post user"));
 

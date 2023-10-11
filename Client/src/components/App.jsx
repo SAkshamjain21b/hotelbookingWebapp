@@ -11,6 +11,7 @@ import { postHotel } from "../features/owner/ownerSlice";
 import { Routes, Route,BrowserRouter,Switch } from "react-router-dom";
 import Signup from "./signup/Signup";
 import Auth from "./Auth/Auth";
+import BookingTable from "./hotelPageComponents/BookingTable.js";
 
 
 
@@ -42,6 +43,8 @@ function App() {
                         </Route>
                     <Route path="/owner/addHotel" element={<AddHotel />} />
                     <Route path="/auth" Component={Auth} />
+                    <Route path="/table" Component={BookingTable} />
+
                     {/* <Route path="/owner/addHotel/addRoom" element={<AddRoomType />} /> */}
         </Routes>
                 <Footer />

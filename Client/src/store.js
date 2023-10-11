@@ -3,6 +3,7 @@ import { useReducer } from 'react';
 import hotelReducer from './features/hotel/hotelSlice';
 import ownerReducer from './features/owner/ownerSlice';
 import userReducer from './features/auth/authSlice';
+import tableReducer from './features/table/tableSlice';
 
 
 console.log("this is store");
@@ -11,5 +12,6 @@ export const store = configureStore({
         hotel: hotelReducer,
         owner: ownerReducer,
         user: userReducer,
+        table:tableReducer,
     },
 });

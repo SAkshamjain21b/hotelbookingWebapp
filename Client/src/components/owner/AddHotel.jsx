@@ -19,6 +19,7 @@ function AddHotel() {
             reviews: "",
             discription: "",
             price: "",
+            location:"",
             tax: "",
             images: [],
             userReviews:[],
@@ -88,6 +89,7 @@ function AddHotel() {
         roomImages: [],
         roomName: "",
         roomArea: 0,
+        numberOfRoom:0,
         roomView: "",
         bedType: "",
         facility: []
@@ -230,7 +232,8 @@ function AddHotel() {
 
                     <FormGroup>
                         <TextField onChange={handleChangeMainInput}  id="name" label="Hotel Name" variant="standard" /> 
-                        <TextField onChange={handleChangeMainInput}  id="discription" label="Hotel Discription" variant="standard" />
+                        <TextField onChange={handleChangeMainInput} id="discription" label="Hotel Discription" variant="standard" />
+                        <TextField onChange={handleChangeMainInput} id="location" label="Location" variant="standard" />
                         <TextField onChange={handleChangeMainInput}  id="price" label="BestRoom Price" variant="standard" />
                         <TextField onChange={handleChangeMainInput}  id="tax" label="Tax on BestRoom" variant="standard" />
                         <FormControlLabel control={<Checkbox name="bathroom" id="hairDryer" onChange={handleChangeMainCheckbox} />} label="Hair Dryer" />

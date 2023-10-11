@@ -85,6 +85,13 @@ function AllReviews(props) {
             </Card>
                 );
             })}
+            <Card sx={{ minWidth: '400' }}>
+                <CardContent>
+                    <h6><strong>Hello</strong></h6>
+                    {/* <p><strong>Rated </strong><Rating name="read-only" value={parseInt(item.rating)} /> by {item.name1} on {item.date}</p>
+                    <p>{item.content}</p> */}
+                </CardContent>
+            </Card>
         </div>
     );
 }

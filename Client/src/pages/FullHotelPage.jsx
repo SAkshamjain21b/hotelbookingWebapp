@@ -75,7 +75,7 @@ function FullHotelPage() {
                 {singleHotelItems.roomType.map((items, index) => {
                     return (
                         <div key={index} >
-                            <RoomType data={items} />   {/* here mapping all the room type that owner had to provide */} 
+                            <RoomType data={items} hotelid={singleHotelItems._id} />   {/* here mapping all the room type that owner had to provide */} 
                         </div>
                     );
                 })}
