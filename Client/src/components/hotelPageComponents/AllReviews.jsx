@@ -2,6 +2,8 @@ import React from "react";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Rating from '@mui/material/Rating';
+import { TextField } from "@mui/material";
+import SubmitReview from "./SubmitRating";
 
 let allInfo = [
     {
@@ -71,6 +73,10 @@ function AllReviews(props) {
         },
         
     ]
+    console.log("in allReviews",props.data._id);
+    function handleChange(e) {
+        console.log(e.target.value);
+    }
     return (
         <div>
             <h4>Customer's Reviews</h4>
@@ -85,13 +91,7 @@ function AllReviews(props) {
             </Card>
                 );
             })}
-            <Card sx={{ minWidth: '400' }}>
-                <CardContent>
-                    <h6><strong>Hello</strong></h6>
-                    {/* <p><strong>Rated </strong><Rating name="read-only" value={parseInt(item.rating)} /> by {item.name1} on {item.date}</p>
-                    <p>{item.content}</p> */}
-                </CardContent>
-            </Card>
+            <SubmitReview data={props.data} />
         </div>
     );
 }

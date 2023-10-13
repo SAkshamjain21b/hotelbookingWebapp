@@ -92,6 +92,7 @@ function FullHotelPage() {
             </div>
             <div className="item35">
                 <AllReviews
+                    data={singleHotelItems}
                     rating={singleHotelItems.ratings}
                     reviews={singleHotelItems.discription}
                     name={singleHotelItems.name}

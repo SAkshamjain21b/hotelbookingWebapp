@@ -1,10 +1,11 @@
 import express from 'express';
-import { getAllxHotels, postHotel } from '../controllers/hotel.js';
+import { getAllxHotels, postHotel,postReview } from '../controllers/hotel.js';
 
 const router = express.Router();
 
 router.get('/', getAllxHotels);
 router.post('/owner/addHotel',postHotel);
+router.post('/:id',postReview)
 
 export default router;
 

@@ -18,6 +18,17 @@ export const getHotelItems = createAsyncThunk('hotel/getHotelItems', async() => 
 
 });
 
+export const postReview = createAsyncThunk('hotel/postReview', async (formData) => {
+    try {
+        const response = await api.postReviews(formData);
+        console.log("Data posted Succefully", response.data);
+        return response.data;
+    } catch (error) {
+        console.log("Error posting reviews in hotelSlice", error);
+        throw error;
+    }
+});
+
 const hotelSlice = createSlice({
     name: 'hotel',
     initialState,
@@ -40,7 +51,7 @@ const hotelSlice = createSlice({
     },
 });
 
-export const { passDataToFullPage,findFromId } = hotelSlice.actions;
+export const { passDataToFullPage,findFromId,addReviews } = hotelSlice.actions;
 
 export default hotelSlice.reducer;
 

@@ -10,6 +10,7 @@ export const postHotel = createAsyncThunk('/owner/addHotel', async (postData) =>
         
         // console.log(postData);
         const response = await api.postHotel(postData);
+
         console.log("Data successfully posted:", response.data);
         return response.data;
     } catch (error) {

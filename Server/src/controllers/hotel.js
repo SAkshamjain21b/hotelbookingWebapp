@@ -33,4 +33,13 @@ export const postHotel = async (req, res,next) => {
     }
 }
 
+export const postReview = async(req,res,next)=>{
+    const filter = {_id:req.body.hotelId};
+    const hotel = await Hotel.findOne(filter);
+    const data = {userRating:req.body.userRating , userID:req.body.userID,content:req.body.content}
+    hotel.userReviews.push(data);
+    hotel.save();
+    console.log(hotel);
+}
+
 export default router;

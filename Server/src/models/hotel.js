@@ -13,10 +13,8 @@ export const hotelSchema = new Schema({
     location:String,
     images: [String],
     userReviews: [{
-        reviewTitle: String,
         userRating: Number,
-        userName: String,
-        reviewDate: Date,
+        userId: String,
         content:String
     }],
     hotelImages: [String],
